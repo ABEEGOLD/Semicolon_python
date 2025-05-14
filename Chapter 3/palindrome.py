@@ -1,16 +1,19 @@
-def Reads_five_digits_palindrome():
-	palindrome int (input("Enter five digits 55555 :"))
+user_input = int(input("Enter a number:"))
 
-	while (true)
-		print("Enter 5 digits number:")
-	if palindrome % 5 == 0
-		print("Number is palindrom")
+first_Num = (user_input // 10000) % 10
+second_Num = (user_input // 1000)  % 10		
+third_Num = (user_input //100) % 10
+fourth_Num =(user_input // 10) % 10
+fifth_Num = (user_input // 1 % 10) 
 
-	if palindrome // 5 == 0
-		print("number is not palindrome")
-		
-		
+print(first_Num)
+print(second_Num)
+print(third_Num)
+print(fourth_Num)
+print(fifth_Num)
 
-		
-		
-	 
+
+if first_Num == fifth_Num and second_Num == fourth_Num:
+	print('palindrome')
+else:
+	print('not palindrome')	 

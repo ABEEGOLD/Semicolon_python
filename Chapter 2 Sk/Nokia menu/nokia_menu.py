@@ -46,7 +46,7 @@ def inbox():
 def received_messages():
     print("""
     1: Obi is a boy
-    2: Abigail is not a Software Engineer
+    2: Abigail is a Software Engineer
     3: Cohort 25 is the best set in SemiColon Africa
     4: I can do all things
     5: Nothing is impossible
@@ -166,7 +166,7 @@ while True:
     nokia_Menu()
     users_choice = input("Enter your choice: ")
     match users_choice:
-        case 1:
+        case "1":
             print("""
             PHONE BOOK
             1. Search 
@@ -180,303 +180,303 @@ while True:
             9. Speed dials
             10. Voice tags
             """)
-            phone_book_choice = input("Enter choice: ")
+            phone_book_choice =  (input("Enter choice: "))
 
             match phone_book_choice:
-                case 1:
+                case "1":
                     print("Search")
-                case 2:
+                case "2":
                     print("Service Nos.")
-                case 3:
+                case "3":
                     print("Add name")
-                case 4:
+                case "4":
                     print("Erase")
-                case 5:
+                case "5":
                     print("Edit")
-                case 6:
+                case "6":
                     print("Assign Tone")
-                case 7:
+                case "7":
                     print("Send b'card")
-                case 8:
+                case "8":
                     print("""
                     OPTIONS
-                    1. Type of view
-                    2. Memory status
+                    "1". Type of view
+                    "2". Memory status
                     """)
-                    options = input("Enter number: ")
+                    options = (input("Enter number: "))
                     match options:
-                        case 1:
+                        case "1":
                             print("Type of view")
-                        case 2:
+                        case "2":
                             print("Memory status")
                         case _:
                             print("Invalid option in Options menu.")
-                case 9:
+                case "9":
                     print("Speed dials")
-                case 10:
+                case "10":
                     print("Voice Tags")
                 case _:
                     print("Invalid option in Phonebook.")
 
-        case 2:
+        case "2":
             print(message())
-            message = input("Enter your number: ")
+            message = (input("Enter your number: "))
             match message:
-                case 1:
+                case "1":
                     print("Write Message")
                     print(write())
 
                     print("Enter number: ")
 
-                case 2:
+                case "2":
                     print(inbox())
                     print(received_messages())
 
-                case 3:
+                case "3":
                     print("Outbox")
-                case 4:
+                case "4":
                     print("Picture Messages")
-                case 5:
+                case "5":
                     print("Templates")
-                case 6:
+                case "6":
                     print("Smileys")
-                case 7:
+                case "7":
                     print("Message Settings")
                     print(message_settings())
 
-                    message_settings_choice = input("Enter number: ")
+                    message_settings_choice = (input("Enter number: "))
                     match message_settings_choice:
-                        case 1:
+                        case "1":
                             print("Set 1")
                             print(set_1())
 
-                            set_1_choice = input("Enter number: ")
+                            set_1_choice = (input("Enter number: "))
                             match set_1_choice:
-                                case 1:
+                                case "1":
                                     print("Message Centre Number")
-                                case 2:
+                                case "2":
                                     print("Message sent as")
-                                case 3:
+                                case "3":
                                     print("Message validity")
 
-                        case 2:
+                        case "2":
                             print("Common")
                             print(common())
                             print("Enter number: ")
-                            common_choice = input("Enter number: ")
+                            common_choice = (input("Enter number: "))
 
                             match common_choice:
-                                case 1:
+                                case "1":
                                     print("Delivery Reports ")
-                                case 2:
+                                case "2":
                                     print("Reply Via Same Centre")
-                                case 3:
+                                case "3":
                                     print("Character Support")
-                case 8:
+                case "8":
                     print("Options")
                     print(options())
-                    options_choice = print("Enter number: ")
+                    options_choice = (print("Enter number: "))
                     match options_choice:
-                        case 1:
+                        case "1":
                             print("Type of View")
-                        case 2:
+                        case "2":
                             print("Memory status")
-                case 9:
+                case "9":
                     print("Speed dials")
-                case 10:
+                case "10":
                     print("Voice Tags")
 
-        case 3:
+        case "3":
             print("CHAT")
             print(chat())
-            chat_choice = input("Enter number: ")
+            chat_choice = (input("Enter number: "))
             match chat_choice:
-                case 1:
+                case "1":
                     print("FaceBook")
-                case 2:
+                case "2":
                     print("weChat")
-                case 3:
+                case "3":
                     print("MyChat")
-                case 4:
+                case "4":
                     print("2go")
-                case 5:
+                case "5":
                     print("Instagram")
-                case 6:
+                case "6":
                     print("SnapChat")
-                case 7:
+                case "7":
                     print("X")
 
-        case 4:
+        case "4":
             print("CALL REGISTER")
             print(call_register())
-            call_register_choice = input("Enter number: ")
+            call_register_choice = (input("Enter number: "))
             match call_register_choice:
-                case 1:
+                case "1":
                     print("Missed calls")
-                case 2:
+                case "2":
                     print("Received calls")
-                case 3:
+                case "3":
                     print("Dialled numbers")
-                case 4:
+                case "4":
                     print("Erase recent call lists")
-                case 5:
+                case "5":
                     print("Show call duration")
-                    call_duration_choice = input("Enter number: ")
+                    call_duration_choice = (input("Enter number: "))
 
                     match call_duration_choice:
-                        case 1:
+                        case "1":
                             print("Last call duration")
-                        case 2:
+                        case "2":
                             print("All Call's duration")
-                        case 3:
+                        case "3":
                             print("Received call's duration")
-                        case 4:
+                        case "4":
                             print("Dialled call's duration")
-                        case 5:
+                        case "5":
                             print("Clear timers")
 
-                case 6:
+                case "6":
                     print("Show Call Costs")
-                    call_cost_choice = input("Enter number: ")
+                    call_cost_choice = (input("Enter number: "))
 
                     match call_cost_choice:
-                        case 1:
+                        case "1":
                             print("Last call cost")
-                        case 2:
+                        case "2":
                             print("All call's cost")
-                        case 3:
+                        case "3":
                             print("Clear counter")
 
-                case 7:
+                case "7":
                     print("Call cost settings")
-                    call_cost_settings_choice = input("Enter number: ")
+                    call_cost_settings_choice = (input("Enter number: "))
                     match call_cost_settings_choice:
-                        case 1:
+                        case "1":
                             print("Call cost limit")
-                        case 2:
+                        case "2":
                             print("Show costs in")
 
-                case 8:
+                case "8":
                     print("Prepaid Credit")
 
-        case 5:
+        case "5":
             print("TONES")
             print(tones())
-            tone_choice = input("Enter number: ")
+            tone_choice = (input("Enter number: "))
             match tone_choice:
-                case 1:
+                case "1":
                     print("Ringing Tone")
-                case 2:
+                case "2":
                     print("Ringing Volume")
-                case 3:
+                case "3":
                     print("Incoming Call Alert")
-                case 4:
+                case "4":
                     print("Composer")
-                case 5:
+                case "5":
                     print("Message Alert Tone")
-                case 6:
+                case "6":
                     print("Keypad Tones")
-                case 7:
+                case "7":
                     print("Warning and Game Tone")
-                case 8:
+                case "8":
                     print("Vibrating Alert")
-                case 9:
+                case "9":
                     print("Screen Saver")
 
-        case 6:
+        case "6":
             print("SETTINGS")
             print(settings())
-            settings_choice = input("Enter number: ")
+            settings_choice = (input("Enter number: "))
             match settings_choice:
-                case 1:
+                case "1":
                     print("Call Settings")
                     print(call_settings())
-                    call_settings_choice = input("Enter number: ")
+                    call_settings_choice = (input("Enter number: "))
                     match call_settings_choice:
-                        case 1:
+                        case "1":
                             print("Automatic redial")
-                        case 2:
+                        case "2":
                             print("Speed dialling")
-                        case 3:
+                        case "3":
                             print("Call waiting options")
-                        case 4:
+                        case "4":
                             print("Own number sending")
-                        case 5:
+                        case "5":
                             print("Phone line in use")
-                        case 6:
+                        case "6":
                              print("Automatic answer")
 
-                case 2:
+                case "2":
                     print("Phone Settings")
                     print(phone_settings())
-                    phone_settings_choice = input("Enter number: ")
+                    phone_settings_choice = (input("Enter number: "))
                     match phone_settings_choice:
-                        case 1:
+                        case "1":
                             print("Language")
-                        case 2:
+                        case "2":
                             print("Cell info display")
-                        case 3:
+                        case "3":
                             print("Network selections")
-                        case 4:
+                        case "4":
                             print("Welcome note")
-                        case 5:
+                        case "5":
                             print("Confirm SIM Service actions")
 
-                case 3:
+                case "3":
                     print("Security settings")
                     print(security_settings())
-                    security_settings_choice = input("Enter number: ")
+                    security_settings_choice = (input("Enter number: "))
                     match security_settings_choice:
-                        case 1:
+                        case "1":
                             print("PIN code request")
-                        case 2:
+                        case "2":
                             print("Call barring service")
-                        case 3:
+                        case "3":
                             print("Fixed dialling")
-                        case 4:
+                        case "4":
                             print("Closed user group")
-                        case 5:
+                        case "5":
                             print("Phone security")
-                        case 6:
+                        case "6":
                             print("Change access code")
 
-                case 4:
+                case "4":
                     print("Restore Factory Settings")
 
-        case 7:
+        case "7":
             print("CALL DIVERT")
             print("Call divert")
-        case 8:
+        case "8":
             print("GAMES")
             print("Games")
-        case 9:
+        case "9":
             print("CALCULATOR")
             print("Calculator")
-        case 10:
+        case "10":
             print("REMINDERS")
             print("Reminders")
-        case 11:
+        case "11":
             print("CLOCK")
             print(clock())
-            clock_choice = input("Enter number: ")
+            clock_choice = (input("Enter number: "))
             match clock_choice:
-                case 1:
+                case "1":
                     print("Alarm Clock")
-                case 2:
+                case "2":
                     print("Clock Settings")
-                case 3:
+                case "3":
                     print("Date Setting")
-                case 4:
+                case "4":
                     print("Stopwatch")
-                case 5:
+                case "5":
                     print("Countdown Timer")
-                case 6:
+                case "6":
                     print("Auto Update Of Date & Time")
 
-        case 12:
+        case "12":
             print("PROFILES")
             print("Profiles")
-        case 13:
+        case "13":
             print("SIM SERVICES")
             print("Sim services")
 

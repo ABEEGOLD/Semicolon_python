@@ -1,0 +1,14 @@
+binary_Number = int (input("Enter binary number containing 0 and 1:"))
+ 
+product = 0
+position = 0
+
+while binary_Number is > 0:
+	binary_Number % 10
+	position = position * 2
+	print(f" {binary} number from {0 and 1} is", binary_Number)
+		
+
+	
+
+

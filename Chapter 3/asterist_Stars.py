@@ -16,7 +16,7 @@ for jen in range(1,9):
 	print()
 
 print()
-for starter in range(1,9):
+for starter in range(1,9, -1):
 	for starbat in range(starter):
 		print('*',end =" ")
 	print()

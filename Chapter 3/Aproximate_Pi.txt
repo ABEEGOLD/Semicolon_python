@@ -1,0 +1,5 @@
+import math
+pi = (round (3.1426,2))
+print(pi)
+pi = (pow(3.1426,3))
+print(pi)

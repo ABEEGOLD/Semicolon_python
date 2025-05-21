@@ -1,15 +1,25 @@
-computer_Input = (input("what is your problem:"))
+independent_Computer ' '
 
-user_Input = ""
+user_input ' '
 
-user_Input = (input("Have you had this problem before (yes or no)?:"))
+ print("independent_Computer:")
+	print()
 
-if user_Input ==  'yes':
-	print('Well, you have it again.')
+ print('What is your problem?')
+	print() 
+	
+  print("Enter")
+	print()
 
-if user_Input ==  "no":
-	print("well, you have it now")
+print('Have you had this problem before (yes or no)?')
+		print()
+
+if user_input is 'yes':
+	print('Well, you will have it again.')
+		print()
+
+if user_input is 'no':
+	print('Well, you have it now.')
 
 
 
- 

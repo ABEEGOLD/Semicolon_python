@@ -1,0 +1,9 @@
+user_input = int(input("Enter number between 1 and 10000:"))
+
+user_input = 10000
+sum = 0
+
+for num in range(user_input)
+	sum = sum + num
+
+print(sum)

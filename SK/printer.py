@@ -1,6 +1,0 @@
-print(f"Sum : ",27.5 + 2)
-print(f"Minus : ",27.5 - 2)
-print(f"multiplication : ",27.5 * 2)
-print(f"true division : ",27.5 / 2)
-print(f"floor : ",27.5 // 2)
-print(f"exponential : ",27.5 ** 2)

@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class ArithmeticSmallestLarget{
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in)
+	
+		System.out.print("Enter first number:");
+		int firstNumber = input.nextInt();
+
+		System.out.print("Enter second number:");
+		int secondNumber = input.nextInt();
+
+		System.out.print("Enter third number:");
+		int thirdNumber = input.nextInt();
+
+		int sum = firstNumber + secondNumber + thirdNumber;
+			System.out.println("The sum of number is:", sum);
+
+		int average = sum/ 3;									System.out.println("The average of number is:", a4verage);
+		
+		int product = firstNumber * secondNumber * thirdNumber;
+			System.out.println("The product of number is:", product);
+		
+
+	}
+
+}

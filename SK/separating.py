@@ -1,6 +1,0 @@
-4,2,3,3,9 == (input("enter five-digit integer: ")). split()
-print(4, "   ",2, "  ",3, "  ",3, "  ",9)
-print(2)
-print(3)
-print(3)
-print(9)

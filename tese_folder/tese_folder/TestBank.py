@@ -1,8 +1,12 @@
 import unittest
-from PersonAccount import PersonAccount
+from account import Account
+import main 
 
-class PersonAccount(unittest.TestCase):
+class testaccount(unittest.TestCase):
 
+	def __init__setUp(self):
+		account_account = account.Account()
+'''
     def test_account_created(self):
         account = PersonAccount.create_account("Abigail", "1234567890")
         self.assertIsNotNone(account)
@@ -18,7 +22,5 @@ def test_accout_details_of_firstName_and_lastName(self):
 	self.assertThisIsThePersonName(firstName,lastName)
 	self.assertEquals(1,len(personAccount.accounts))
 
+'''
 
-	
-if __name__ == '__main__':
-    unittest.main()

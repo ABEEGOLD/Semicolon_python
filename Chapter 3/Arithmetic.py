@@ -6,7 +6,7 @@ sum = firstNumber + secondNumber + thirdNumber
 print("sum is:",sum)
 
 average = firstNumber / secondNumber / thirdNumber
-print(f'the average of the numbers is {average}'.2f)
+print(f'the average of the numbers is {average}')
 
 product = firstNumber * secondNumber * thirdNumber
 print("the product of number is:",product)

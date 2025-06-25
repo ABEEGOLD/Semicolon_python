@@ -1,0 +1,9 @@
+def multiply_element_at_every_third_position(number);
+	sum = 0
+	for index in range number:
+		if index % 3 == 0:
+		sum * index
+			return sum
+			
+
+ 
